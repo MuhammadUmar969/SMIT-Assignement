@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>food wagon</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css"
+      integrity="sha512-AyOHI/tIMgoG+32apAs3OdqFowPSDqiz5vLcD2wdhBJ4J/xF1PI6UITcyhS5HCmsiioapRaONqYBvimxzFfnoA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white px-5 py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand text-center" href="#">
+          <img
+            src="./img/logo.svg"
+            alt="foodwagon"
+            class="pb-2"
+            width="28px"
+            height="29.977px"
+          />
+          <span class="food fs-3"> food </span><span class="wagon fs-3">wagon</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <p class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+            Deliver to:
+            <span class="fw-normal px-1"> Current location </span> Mohammadpur
+            Bus Stand, Dhaka
+          </p>
+          <p class="fs-5 fw-semibold">
+            <i class="fa fa-magnifying-glass"></i> Search Food
+          </p>
+          <button class="btn btn-outline-warning" type="submit">
+            <i class="fa fa-user"></i> Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="starving position-relative">
+      <img
+        src="./img/hero-bg.png"
+        class="img-fluid z-n1 position-absolute"
+        alt="hero"
+        width="100%"
+        height="auto"
+      />
+
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="text-light fs-1 fw-bold">Are you starving?</h1>
+            <p>Within a few clicks, find meals that are accessible near you</p>
+
+            <div class="input-group bg-light rounded d-block p-3 mt-2">
+              <div class="btn d-flex flex-column flex-md-row">
+                <button class="btn btn-outline-warning fw-semibold">
+                  <i class="fa fa-truck pe-2"></i>Delivery
+                </button>
+                <button class="btn fw-semibold">
+                  <i class="fa fa-wallet pe-2"></i>Pickup
+                </button>
+              </div>
+              <div class="input d-flex m-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Address"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn orange" type="button" id="button-addon2">
+                  Find Food
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-img col-md-6">
+            <img
+              src="./img/hero-header-1.png"
+              class="img-fluid"
+              alt="header"
+              width="100%"
+              height="auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row p-5">
+      <div class="col-md-6 col-lg-3">
+        <img
+          src="./img/discount-item-1.png"
+          alt="discount-item-1"
+          class="img-fluid rounded pt-2"
+          style="width: 80%"
+        />
+        <h1 class="fs-5 text-dark fw-bolder pt-3 pb-2">Greys Vage</h1>
+        <button class="btn btn-outline-warning">6 days remaining</button>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img
+          src="./img/discount-item-2.png"
+          alt="discount-item-1"
+          class="img-fluid rounded pt-2"
+          style="width: 80%"
+        />
+        <h1 class="fs-5 text-dark fw-bolder pt-3 pb-2">Greys Vage</h1>
+        <button class="btn btn-outline-warning">6 days remaining</button>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img
+          src="./img/discount-item-3.png"
+          alt="discount-item-1"
+          class="img-fluid rounded pt-2"
+          style="width: 80%"
+        />
+        <h1 class="fs-5 text-dark fw-bolder pt-3 pb-2">Greys Vage</h1>
+        <button class="btn btn-outline-warning">7 days remaining</button>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img
+          src="./img/discount-item-4.png"
+          alt="discount-item-1"
+          class="img-fluid rounded pt-2"
+          style="width: 80%"
+        />
+        <h1 class="fs-5 text-dark fw-bolder pt-3 pb-2">Greys Vage</h1>
+        <button class="btn btn-outline-warning">8 days remaining</button>
+      </div>
+    </div>
+
+    <div class="discount row p-3">
+      <h1 class="text-center fs-2 fw-bold pt-4 pb-2" style="color: #fd7e14">
+        How does it works
+      </h1>
+
+      <div class="d-flex justify-content-around align-items-center text-center row p-5">
+        <div class="col-sm-5 col-md-6 col-lg-3">
+          <img src="./img/location.png" alt="location" />
+          <h1 class="fs-5 fw-bold pt-3">Select location</h1>
+          <p class="fs-6 fw-lighter">
+            Choose the location where your food will be delivered
+          </p>
+        </div>
+        <div class="col-sm-5 col-md-6 col-lg-3">
+          <img src="./img/order.png" alt="location" />
+          <h1 class="fs-5 fw-bold pt-3">Choose Order</h1>
+          <p class="fs-6 fw-lighter">
+            Check over hundreds of menus to pick your favorite food
+          </p>
+        </div>
+        <div class="col-sm-5 col-md-6 col-lg-3">
+          <img src="./img/pay.png" alt="location" />
+          <h1 class="fs-5 fw-bold pt-3">Pay Advanced</h1>
+          <p class="fs-6 fw-lighter">
+            It's quick safe, and simple. Select several methods of payments.
+          </p>
+        </div>
+        <div class="col-sm-5 col-md-6 col-lg-3">
+          <img src="./img/meals.png" alt="location" />
+          <h1 class="fs-5 fw-bold pt-3">Enjoy Meals</h1>
+          <p class="fs-6 fw-lighter">
+            Food is made and delivered directly to your home.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-img position-relative">
+      <img src="./img/cta-two-bg.png" alt="cta-two-bg" class="img-fluid" />
+
+      <div class="position-absolute z-3 foot-section">
+        <h1 class="fs-1 text-light fw-bold w-75">
+          Are you ready to order with the best deals?
+        </h1>
+        <button class="btn text-light pt-2" style="background: #fd7e14">
+          Proceed to order
+        </button>
+      </div>
+    </div>
+
+    <footer class="bg-black text-light p-5">
+      <div class="foot1 p-4">
+        <h1 class="fs-4 fw-bold">Our top cities</h1>
+        <div class="row d-flex justify-content-between pt-2 lh-lg fw-light">
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <ul>
+              <li>San Francisco</li>
+              <li>Miami</li>
+              <li>San Diego</li>
+              <li>East Bay</li>
+              <li>Long Beach</li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <ul>
+              <li>Los Angeles</li>
+              <li>Washington DC</li>
+              <li>Seattle</li>
+              <li>Portland</li>
+              <li>Nashville</li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <ul>
+              <li>New York City</li>
+              <li>Orange Country</li>
+              <li>Atlanta</li>
+              <li>Charlotte</li>
+              <li>Denver</li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <ul>
+              <li>Chicago</li>
+              <li>Phoenix</li>
+              <li>Las Vegas</li>
+              <li>Sacramento</li>
+              <li>Oklahoma City</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontal-line"></div>
+
+      <div class="foot1 p-4">
+        <div class="row d-flex justify-content-between pt-2 lh-lg fw-light">
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <h1 class="fs-4 fw-bold">Company</h1>
+            <ul>
+              <li>About Us</li>
+              <li>Team</li>
+              <li>Careers</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <h1 class="fs-4 fw-bold">Contact</h1>
+            <ul>
+              <li>Help & Support</li>
+              <li>Partner with us</li>
+              <li>Ride with us</li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <h1 class="fs-4 fw-bold">Legal</h1>
+            <ul>
+              <li>Terms & Conditions</li>
+              <li>Refund & Cancellation</li>
+              <li>Privacy Policy</li>
+              <li>Cookie Policy</li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-6 col-lg-3">
+            <h2 class="fs-4 fw-bold text-secondary">Follow Us</h2>
+            <p class="fs-6 text-secondary">
+              Receive exclusive offers in your mailbox
+            </p>
+            <div class="input d-flex px-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Email"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn orange" type="button" id="button-addon2">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontal-line"></div>
+
+      <div class="foot-line d-flex flex-row justify-content-between p-4">
+        <p>
+          All rights Reserved ©
+          <span class="fw-bolder"> Your Company, 2023</span>
+        </p>
+        <p>
+          Made with <i class="fa fa-heart text-warning"></i> by
+          <span class="fw-bolder">M.U.A.K</span>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
