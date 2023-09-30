@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css"
-      integrity="sha512-AyOHI/tIMgoG+32apAs3OdqFowPSDqiz5vLcD2wdhBJ4J/xF1PI6UITcyhS5HCmsiioapRaONqYBvimxzFfnoA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -32,7 +32,8 @@
             width="28px"
             height="29.977px"
           />
-          <span class="food fs-3"> food </span><span class="wagon fs-3">wagon</span>
+          <span class="food fs-3"> food </span
+          ><span class="wagon fs-3">wagon</span>
         </a>
         <button
           class="navbar-toggler"
@@ -48,6 +49,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <p class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5 fw-semibold">
             Deliver to:
+            <i
+              class="fa-solid fa-location-dot text-warning text-center p-1"
+            ></i>
             <span class="fw-normal px-1"> Current location </span> Mohammadpur
             Bus Stand, Dhaka
           </p>
@@ -61,58 +65,48 @@
       </div>
     </nav>
 
-    <div class="starving position-relative">
-      <img
-        src="./img/hero-bg.png"
-        class="img-fluid z-n1 position-absolute"
-        alt="hero"
-        width="100%"
-        height="auto"
-      />
+    <div class="starving">
+      <div class="row p-5">
+        <div class="col-md-6">
+          <h1 class="text-light fs-1 fw-bold">Are you starving?</h1>
+          <p>Within a few clicks, find meals that are accessible near you</p>
 
-      <div class="container p-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="text-light fs-1 fw-bold">Are you starving?</h1>
-            <p>Within a few clicks, find meals that are accessible near you</p>
-
-            <div class="input-group bg-light rounded d-block p-3 mt-2">
-              <div class="btn d-flex flex-column flex-md-row">
-                <button class="btn btn-outline-warning fw-semibold">
-                  <i class="fa fa-truck pe-2"></i>Delivery
-                </button>
-                <button class="btn fw-semibold">
-                  <i class="fa fa-wallet pe-2"></i>Pickup
-                </button>
-              </div>
-              <div class="input d-flex m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Your Address"
-                  aria-describedby="button-addon2"
-                />
-                <button class="btn orange" type="button" id="button-addon2">
-                  Find Food
-                </button>
-              </div>
+          <div class="input-group bg-light rounded d-block p-3 mt-2">
+            <div class="btn d-flex flex-column flex-md-row">
+              <button class="btn btn-outline-warning fw-semibold">
+                <i class="fa fa-truck pe-2"></i>Delivery
+              </button>
+              <button class="btn fw-semibold">
+                <i class="fa fa-wallet pe-2"></i>Pickup
+              </button>
+            </div>
+            <div class="input d-flex m-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Address"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn orange" type="button" id="button-addon2">
+                Find Food
+              </button>
             </div>
           </div>
+        </div>
 
-          <div class="header-img col-md-6">
-            <img
-              src="./img/hero-header-1.png"
-              class="img-fluid"
-              alt="header"
-              width="100%"
-              height="auto"
-            />
-          </div>
+        <div class="header-img col-md-6">
+          <img
+            src="./img/hero-header-1.png"
+            class="img-fluid"
+            alt="header"
+            width="100%"
+            height="auto"
+          />
         </div>
       </div>
     </div>
 
-    <div class="row p-5">
+    <div class="days row p-5">
       <div class="col-md-6 col-lg-3">
         <img
           src="./img/discount-item-1.png"
@@ -160,7 +154,9 @@
         How does it works
       </h1>
 
-      <div class="d-flex justify-content-around align-items-center text-center row p-5">
+      <div
+        class="d-flex justify-content-around align-items-center text-center row p-5"
+      >
         <div class="col-sm-5 col-md-6 col-lg-3">
           <img src="./img/location.png" alt="location" />
           <h1 class="fs-5 fw-bold pt-3">Select location</h1>
@@ -192,17 +188,672 @@
       </div>
     </div>
 
-    <div class="foot-img position-relative">
-      <img src="./img/cta-two-bg.png" alt="cta-two-bg" class="img-fluid" />
+    <div class="items mt-5 p-4">
+      <h1 class="fs-2 fw-bold text-center">Popular Items</h1>
 
-      <div class="position-absolute z-3 foot-section">
-        <h1 class="fs-1 text-light fw-bold w-75">
-          Are you ready to order with the best deals?
-        </h1>
-        <button class="btn text-light pt-2" style="background: #fd7e14">
-          Proceed to order
-        </button>
+      <div class="row m-3">
+        <div class="card text-start col-md-6 col-lg-2" style="height: auto">
+          <img
+            src="./img/cheese-burger.png"
+            class="card-img-top rounded"
+            alt="cheese-burger"
+            style="width: 80%; height: auto"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-5 fw-bold">Cheese Burger</h5>
+            <p class="fs-6 fw-bolder text-warning">
+              <i class="fa-solid fa-location-dot"></i> Burger Arena
+            </p>
+            <p class="card-text fs-6 fw-bold">$ 3.88</p>
+            <a href="#" class="btn btn-outline-danger w-75">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card text-start col-md-6 col-lg-2" style="height: auto">
+          <img
+            src="./img/toffes-cake.png"
+            class="card-img-top rounded"
+            alt="toffes-cake"
+            style="width: 80%; height: auto"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-5 fw-bold">Toffe's Cake</h5>
+            <p class="fs-6 fw-bolder text-warning">
+              <i class="fa-solid fa-location-dot"></i> Top Sticks
+            </p>
+            <p class="card-text fs-6 fw-bold">$ 4.00</p>
+            <a href="#" class="btn btn-outline-danger w-75">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card text-start col-md-6 col-lg-2" style="height: auto">
+          <img
+            src="./img/dancake.png"
+            class="card-img-top rounded"
+            alt="dancake"
+            style="width: 80%; height: auto"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-5 fw-bold">Dancake</h5>
+            <p class="fs-6 fw-bolder text-warning">
+              <i class="fa-solid fa-location-dot"></i> Cake World
+            </p>
+            <p class="card-text fs-6 fw-bold">$ 1.99</p>
+            <a href="#" class="btn btn-outline-danger w-75">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card text-start col-md-6 col-lg-2" style="height: auto">
+          <img
+            src="./img/crispy-sandwitch.png"
+            class="card-img-top rounded"
+            alt="crispy-sandwitch"
+            style="width: 80%; height: auto"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-5 fw-bold">Fastfood Dine</h5>
+            <p class="fs-6 fw-bolder text-warning">
+              <i class="fa-solid fa-location-dot"></i> Burger Arena
+            </p>
+            <p class="card-text fs-6 fw-bold">$ 3.00</p>
+            <a href="#" class="btn btn-outline-danger w-75">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card text-start col-md-6 col-lg-2" style="height: auto">
+          <img
+            src="./img/thai-soup.png"
+            class="card-img-top rounded"
+            alt="crispy-sandwitch"
+            style="width: 80%; height: auto"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-5 fw-bold">Thai Soup</h5>
+            <p class="fs-6 fw-bolder text-warning">
+              <i class="fa-solid fa-location-dot"></i> Foody man
+            </p>
+            <p class="card-text fs-6 fw-bold">$ 2.79</p>
+            <a href="#" class="btn btn-outline-danger w-75">Order Now</a>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="resturant row gap-3 mt-2 p-4">
+      <h1 class="fs-2 fw-bold text-center">Featured Resturants</h1>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/food-world.png"
+          class="card-img-top rounded position-relative"
+          alt="food-world"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/food-world-logo.png"
+                alt="food-world-logo"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-6 fw-bold"
+            >
+              <p class="text-dark">Foodworld</p>
+              <p><i class="fa-solid fa-star"></i> 46</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-dark text-warning text-center rounded-pill"
+            >Open tomorrow</a
+          >
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/pizza-hub.png"
+          class="card-img-top rounded position-relative"
+          alt="pizza-hub"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/pizzahub-logo.png"
+                alt="pizza-hub"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-6 fw-bold"
+            >
+              <p class="text-dark">Pizzahub</p>
+              <p><i class="fa-solid fa-star"></i> 40</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-dark text-warning text-center rounded-pill"
+            >Open tomorrow</a
+          >
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/donuts-hut.png"
+          class="card-img-top rounded position-relative"
+          alt="donuthut"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/donuts-hut-logo.png"
+                alt="donuthut"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-6 fw-bold"
+            >
+              <p class="text-dark">Donuts hut</p>
+              <p><i class="fa-solid fa-star"></i> 20</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-success text-dark text-center rounded-pill"
+            >Open now</a
+          >
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/donuthut.png"
+          class="card-img-top rounded position-relative"
+          alt="donuthut"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/donut-hut-logo.png"
+                alt="donuthut"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-6 fw-bold"
+            >
+              <p class="text-dark">Donuts hut</p>
+              <p><i class="fa-solid fa-star"></i>50</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-success text-dark text-center rounded-pill"
+            >Open now</a
+          >
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/ruby-tuesday.png"
+          class="card-img-top rounded position-relative"
+          alt="ruby-tuesday"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/ruby-tuesday-logo.png"
+                alt="ruby-tuesday"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-bold"
+            >
+              <p class="text-dark">Ruby Tuesday</p>
+              <p><i class="fa-solid fa-star"></i> 26</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-dark text-warning text-center rounded-pill"
+            >Open tomorrow</a
+          >
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/kuakata.png"
+          class="card-img-top rounded position-relative"
+          alt="kuakata"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/kuakata-logo.png"
+                alt="kuakata"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-6 fw-bold"
+            >
+              <p class="text-dark">Kuakata Chicken</p>
+              <p><i class="fa-solid fa-star"></i> 53</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-dark text-warning text-center rounded-pill"
+            >Open tomorrow</a
+          >
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/red-square.png"
+          class="card-img-top rounded position-relative"
+          alt="red-square"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/red-square-logo.png"
+                alt="red-square"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-6 fw-bold"
+            >
+              <p class="text-dark">Red Square</p>
+              <p><i class="fa-solid fa-star"></i> 45</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-success text-dark text-center rounded-pill"
+            >Open now</a
+          >
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 15rem">
+        <img
+          src="./img/taco-bell.png"
+          class="card-img-top rounded position-relative"
+          alt="taco-bell"
+        />
+        <div class="position-absolute d-flex gap-2 p-2">
+          <button class="btn rounded bg orange text-light fw-semibold fs-6">
+            <i class="fa-solid fa-tag"></i> 20% off
+          </button>
+
+          <button class="btn rounded bg yellow text-light fw-semibold fs-6">
+            <i class="fa-solid fa-clock"></i> Fast
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/taco-bell-logo.png"
+                alt="taco-bell"
+                class="img-fluid w-75 rounded"
+              />
+            </div>
+            <div
+              class="d-flex flex-column align-items-center text-warning fw-6 fw-bold"
+            >
+              <p class="text-dark">Taco Bell</p>
+              <p><i class="fa-solid fa-star"></i> 35</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-outline-success text-dark text-center rounded-pill"
+            >Open now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="circle-img">
+      <div class="row">
+        <div
+          class="col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center gap-2"
+        >
+          <img
+            src="./img/search-pizza.png"
+            alt="search-pizza"
+            class="rounded-circle"
+            width="80%"
+          />
+          <h3 class="fs-5 fw-semibold">Pizza</h3>
+        </div>
+
+        <div
+          class="col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center gap-2"
+        >
+          <img
+            src="./img/burger.png"
+            alt="burger"
+            class="rounded-circle"
+            width="80%"
+          />
+          <h3 class="fs-5 fw-semibold">Burger</h3>
+        </div>
+
+        <div
+          class="col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center gap-2"
+        >
+          <img
+            src="./img/noodles.png"
+            alt="noodles"
+            class="rounded-circle"
+            width="80%"
+          />
+          <h3 class="fs-5 fw-semibold">Noodles</h3>
+        </div>
+
+        <div
+          class="col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center gap-2"
+        >
+          <img
+            src="./img/sub-sandwich.png"
+            alt="sub-sandwich"
+            class="rounded-circle"
+            width="80%"
+          />
+          <h3 class="fs-5 fw-semibold">Sub Sandwich</h3>
+        </div>
+
+        <div
+          class="col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center gap-2"
+        >
+          <img
+            src="./img/chowmein.png"
+            alt="chowmein"
+            class="rounded-circle"
+            width="80%"
+          />
+          <h3 class="fs-5 fw-semibold">Chowmein</h3>
+        </div>
+
+        <div
+          class="col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center gap-2"
+        >
+          <img
+            src="./img/steak.png"
+            alt="steak"
+            class="rounded-circle"
+            width="80%"
+          />
+          <h3 class="fs-5 fw-semibold">Steak</h3>
+        </div>
+      </div>
+
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center pt-5"
+      >
+        <h1 class="fs-3 fw-bold">Search by food</h1>
+
+        <div class="d-flex gap-3">
+          <p class="pt-3 fs-6">
+            View All <i class="fa-solid fa-greater-than"></i>
+          </p>
+          <button class="btn bg-warning text-white rounded-circle">
+            <i class="fa-solid fa-less-than fs-6"></i>
+          </button>
+          <button class="btn bg-warning text-white rounded-circle">
+            <i class="fa-solid fa-greater-than fs-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-area">
+      <div class="row d-flex align-items-center mt-5 p-5 mb-5 gap-2 rounded">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div
+            class="d-flex flex-column flex-md-row gap-3 justify-content-around align-items-center"
+          >
+            <img
+              src="./img/discounts.png"
+              alt="discount"
+              class="img-fluid"
+              width="30%"
+            />
+            <h2 class="fs-5 fw-bolder text-warning">Daily Discounts</h2>
+          </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div
+            class="d-flex flex-column flex-md-row gap-3 justify-content-around align-items-center"
+          >
+            <img
+              src="./img/live-tracking.png"
+              alt="live-tracking"
+              class="img-fluid"
+              width="30%"
+            />
+            <h2 class="fs-5 fw-bolder text-warning">Live Tracking</h2>
+          </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div
+            class="d-flex flex-column flex-md-row gap-3 justify-content-around align-items-center"
+          >
+            <img
+              src="./img/quick-delivery.png"
+              alt="live-tracking"
+              class="img-fluid"
+              width="30%"
+            />
+            <h2 class="fs-5 fw-bolder text-warning">Quick Delivery</h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="banner-area-1 d-flex flex-column flex-md-row justify-content-between align-items-center gap-5 mt-5 p-3"
+      >
+        <div class="mob-img">
+          <img
+            src="./img/phone-cta-one.png"
+            alt="phone-cta-one"
+            class="img-fluid"
+          />
+        </div>
+        <div class="p-2">
+          <h2 class="fs-1 text-warning fw-bold">Install the App</h2>
+          <p class="fw-lighter">
+            It's never been easy to find food. Look for the finest discounts and
+            you'll be lost in a world of delectable food.
+          </p>
+          <div class="d-flex flex-column flex-md-row">
+            <button class="btn btn-outline-warning text-danger m-1">
+              <i class="fa-brands fa-google-play px-1"></i> Google Play
+            </button>
+            <button class="btn btn-outline-warning text-danger m-1">
+              <i class="fa-brands fa-apple px-1"></i>Apple Store
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="below-cards mt-5">
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="card-body p-4">
+              <h5 class="card-title fs-3 fw-bold text-dark">
+                Best deals <span class="text-warning">Crispy Sandwiches</span>
+              </h5>
+              <p class="card-text">
+                Enjoy the large size of sandwiches. Complete perfect size of
+                sandwiches.
+              </p>
+              <button class="btn btn-warning text-light">
+                Proceed to Order <i class="fa-solid fa-greater-than px-1"></i>
+              </button>
+            </div>
+          </div>
+          <div class="below-img col-md-8">
+            <img
+              src="./img/crispy-sandwiches.png"
+              class="img-fluid rounded-start"
+              alt="crispy-sandwiches"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="below-img col-md-8">
+            <img
+              src="./img/fried-chicken.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-4">
+            <div class="card-body p-4">
+              <h5 class="card-title fs-3 fw-bold text-dark">
+                Celebrate parties with
+                <span class="text-warning">Fried Chicken</span>
+              </h5>
+              <p class="card-text">
+                Get the best fried chicken smeared with a lip smacking lemon
+                chili flavor. Check out best deals for fried chicken.
+              </p>
+              <button class="btn btn-warning text-light">
+                Proceed to Order <i class="fa-solid fa-greater-than px-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="card-body p-4">
+              <h5 class="card-title fs-3 fw-bold text-dark">
+                Wanna eat hot & spicy <span class="text-warning">Pizza?</span>
+              </h5>
+              <p class="card-text">
+                Pair up with a friend and enjoy the hot and crispy pizza pops.
+                Try it with the best deals.
+              </p>
+              <button class="btn btn-warning text-light">
+                Proceed to Order <i class="fa-solid fa-greater-than px-1"></i>
+              </button>
+            </div>
+          </div>
+          <div class="below-img col-md-8">
+            <img
+              src="./img/pizza.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-img">
+      <h1 class="fs-3 text-light text-center fw-bold p-2">
+        Are you ready to order with the best deals?
+      </h1>
+      <button class="btn text-light p-2 fs-6" style="background: #fd7e14">
+        Proceed to order <i class="fa-solid fa-greater-than px-1 fs-6"></i>
+      </button>
     </div>
 
     <footer class="bg-black text-light p-5">
